@@ -1,0 +1,108 @@
+.popular-movies__title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  margin: 0;
+  margin-bottom: 86px;
+}
+
+.popular-movies__list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style-type: none;
+  column-gap: 10px;
+  row-gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.popular-movies__item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  min-height: 400px;
+  position: relative;
+}
+
+.popular-movies__cover {
+  border: none;
+  margin: 0;
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 3;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
+.popular-movies__content {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 93%;
+}
+
+.popular-movies__image {
+  width: 100%;
+  height: auto;
+  min-height: 225px;
+  border-radius: 5px;
+}
+
+.popular-movies__item-title {
+  margin: 0;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: start;
+  margin-top: 10px;
+}
+
+.popular-movies__genres-wrapper {
+  display: flex;
+  text-align: start;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.popular-movies__genres {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  margin-right: 3px;
+}
+
+.popular-movies__year {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: start;
+  margin-top: 10px;
+}
+
+.popular-movies__like {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: auto;
+  margin-top: auto;
+  z-index: 5;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}

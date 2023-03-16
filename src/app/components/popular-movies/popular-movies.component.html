@@ -1,0 +1,28 @@
+<div class="popular-movies">
+  <h2 class="popular-movies__title">Популярные фильмы</h2>
+  <ul class="popular-movies__list">
+    <li class="popular-movies__item" *ngFor="let film of films; let i = index">
+      <button class="popular-movies__cover" type="button">
+      </button>
+      <div class="popular-movies__content">
+        <img class="popular-movies__image" src="./images/{{film.id}}.jpeg" width="150" height="225" alt="{{film.name + '.'}}">
+        <h3 class="popular-movies__item-title">{{film.name}}</h3>
+        <div class="popular-movies__genres-wrapper">
+          <span class="popular-movies__genres" *ngFor="let genre of film.genre">{{genre == 1 ? 'драма, ' : genre == 2 ? 'биография, ' : genre == 3 ? 'история, ' :genre == 4 ? 'фэнтези, ' : genre == 5 ? 'приключения, ' :genre == 6 ? 'боевик, ' : genre == 7 ? 'мультфильм, ' :genre == 8 ? 'комедия, ' : genre == 9 ? 'триллер, ' :genre == 10 ? 'детектив, ' : genre == 11 ? 'фантастика, ' : ''}}</span>
+          <span class="popular-movies__genres">военный</span>
+        </div>
+        <span class="popular-movies__year">{{film.year}}</span>
+        <button mat-icon-button class="popular-movies__like" type="button" (click)="details = !details">
+          <img src="./images/like.svg" width="20" height="20" alt="Лайк." *ngIf="details">
+          <img src="./images/like-black.svg" width="20" height="20" alt="Лайк." *ngIf="!details">
+        </button>
+      </div>
+    </li>
+  </ul>
+  <h2 class="popular-movies__title">Самый лучший фильм</h2>
+  <ul class="popular-movies__list">
+
+  </ul>
+</div>
+
+
