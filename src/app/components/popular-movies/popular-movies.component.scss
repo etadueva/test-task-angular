@@ -5,6 +5,10 @@
   font-family: 'Montserrat', 'Arial', sans-serif;
   margin: 0;
   margin-bottom: 86px;
+
+  &--best {
+    margin-top: 40px;
+  }
 }
 
 .popular-movies__list {
@@ -32,7 +36,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0);
-  z-index: 3;
+  z-index: 1;
   cursor: pointer;
 
   &:hover {
@@ -44,16 +48,16 @@
   padding: 15px 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #ffffff;
   border-radius: 10px;
   height: 93%;
 }
 
 .popular-movies__image {
-  width: 100%;
-  height: auto;
-  min-height: 225px;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .popular-movies__item-title {
@@ -62,7 +66,7 @@
   font-size: 14px;
   line-height: 16px;
   text-align: start;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .popular-movies__genres-wrapper {
@@ -85,24 +89,5 @@
   line-height: 14px;
   text-align: start;
   margin-top: 10px;
-}
-
-.popular-movies__like {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin-left: auto;
-  margin-top: auto;
-  z-index: 5;
-  cursor: pointer;
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
+  display: block;
 }

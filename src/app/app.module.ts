@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ButtonLikeComponent } from './components/button-like/button-like.component';
 import { PopularMoviesComponent } from './components/popular-movies/popular-movies.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    PopularMoviesComponent
+    PopularMoviesComponent,
+    ButtonLikeComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,4 @@ import * as data from 'src/assets/data/data.json';
 
 export class PopularMoviesComponent {
   films: any = (data as any).default;
-
-  details = false
 }
